@@ -7,11 +7,16 @@ public class String6 {
         Scanner scan = new Scanner(System.in);
         String s = scan.nextLine();
         s=s.trim();
-        String[] tokens=s.split("[ !,'_@?.]+");
-        int lenOfTokens=Array.getLength(tokens);
-        System.out.println(lenOfTokens);
-        for(int i=0;i<lenOfTokens;i++) {
-        	System.out.println(tokens[i]);
+        if(s.length()!=0) {
+        	String[] tokens=s.split("[ !,'_@?.]+");
+            int lenOfTokens=Array.getLength(tokens);
+            System.out.println(lenOfTokens);
+            for(int i=0;i<lenOfTokens;i++) {
+            	System.out.println(tokens[i]);
+            }
+        }
+        else {
+        	System.out.println("0");
         }
         scan.close();
     }
